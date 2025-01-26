@@ -1,0 +1,123 @@
+:root{
+    --black-color:#1a1a1a;
+    --white-color:#fff;
+    --red-color:red;
+    --dark-gray:#333 !important;
+    --light-gray:#eee;
+
+}
+
+html{
+    margin: 0; padding: 0;
+}
+body{
+    margin: 0; padding: 0;
+    background-color: var(--black-color);
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+.color-white{
+    color: var(--white-color);
+}
+.bg-dark-gray{
+    background-color: var(--dark-gray);
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+         'FILL' 0,
+         'wght' 500,
+         'GRAD' 0,
+         'opsz' 24;
+}
+
+#line{
+    width: 1px; height:100%;
+    background-color: var(--white-color);
+}
+#searchBar input{
+    background-color: var(--dark-gray); color: var(--light-gray);
+}
+#searchBar input:focus{
+    background-color: #424242;
+    outline: none;
+}
+#playlistInfo p{
+    color: #ccc;
+}
+td{
+    border-bottom: 1px solid var(--dark-gray);
+    height:4em;
+}
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload{
+
+    display: inline-block;
+    cursor: pointer;
+    color: var(--white-color);
+    border-radius: 15px;
+}
+.custom-file-upload span:hover{
+
+}
+#audioPlayer{
+    background-color:var(--dark-gray);
+}
+#playActions i,#sound i{
+    font-variation-settings:
+            'FILL' 1,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48;
+    cursor: pointer;
+}
+#shufflebtn,#repeatbtn{
+    font-variation-settings:
+            'FILL' 1,
+            'wght' 500,
+            'GRAD' 0,
+            'opsz' 48
+    !important;
+    cursor: pointer;
+}
+/*#playBar{*/
+/*    background-color: #424242;*/
+/*}*/
+/*#redBar , #pointer{*/
+/*    background-color: var(--red-color);*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*#pointer{*/
+/*    transform: translate(0%, -25%) !important;*/
+/*}*/
+#playBar{
+    -webkit-appearance: none;
+    background-color: red;
+    /*background-color: #424242;*/
+    cursor: pointer;
+}
+#playBar::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    background-color: var(--red-color);
+    height:0.75em; width:0.75em;
+    outline: 4px solid var(--white-color);
+    border-radius:50%;
+
+}#playBar::-moz-range-thumb{
+    -webkit-appearance:none;
+    background-color: var(--red-color);
+    height:0.75em; width:0.75em;
+    outline: 4px solid var(--white-color);
+    border-radius:50%;
+
+}
