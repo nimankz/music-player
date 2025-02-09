@@ -43,32 +43,40 @@
                 <tr class="text-slate-400">
                     <th class="font-medium">#</th>
                     <th class="font-medium">song name</th>
-                    <th><span class="material-symbols-outlined font-medium">delete</span></th>
+                    <th><span class="material-symbols-outlined font-medium">play_arrow</span></th>
                     <th><span class="material-symbols-outlined font-medium">download</span></th>
                 </tr>
             </table>
-            <div class="w-1/6 center bg-dark-gray rounded-xl mt-4 h-12">
-                <label for="addSong" class="custom-file-upload text-center w-full">
-                    <span class="material-symbols-outlined" title="add your song">add</span>
-                    <input id="addSong" type="file" class="color-white  center bg-dark-gray h-8  "/>
-                </label>
+            <audio id="songPlayer"></audio>
 
-            </div>
+
+
+            <div class="w-full h-4"></div>
+            <div class="w-full h-4"></div>
+            <div class="w-full h-4"></div>
+<!--            <div class="w-1/6 center bg-dark-gray rounded-xl mt-4 h-12">-->
+<!--                <label for="addSong" class="custom-file-upload text-center w-full">-->
+<!--                    <span class="material-symbols-outlined" title="add your song">add</span>-->
+<!--                    <input id="addSong" type="file" class="color-white  center bg-dark-gray h-8  "/>-->
+<!--                </label>-->
+
+<!--            </div>-->
 
         </section>
+
         <nav id="audioPlayer" class="w-full bottom-0 z-10 float-right absolute h-20  center flex-row content-center justify-around ">
         <div id="playActions" class="text-3xl center flex-row gap-2 ">
-            <i id="playbtn" class="material-symbols-outlined text-4xl color-white">play_arrow</i>
-            <i id="prebtn" class="material-symbols-outlined text-4xl color-white">skip_previous</i>
-            <i id="nextbtn" class="material-symbols-outlined text-4xl color-white">skip_next</i>
-            <i id="repeatbtn" class="material-symbols-outlined text-4xl color-white ">repeat</i>
-            <i id="shufflebtn" class="material-symbols-outlined text-4xl color-white ">shuffle</i>
+            <i id="playBtn" onclick="playPause()" class="material-symbols-outlined text-4xl color-white">play_arrow</i>
+            <i id="preBtn" class="material-symbols-outlined text-4xl color-white">skip_previous</i>
+            <i id="nextBtn" class="material-symbols-outlined text-4xl color-white">skip_next</i>
+            <i id="repeatBtn" class="material-symbols-outlined text-4xl color-white ">repeat</i>
+            <i id="shuffleBtn" class="material-symbols-outlined text-4xl color-white ">shuffle</i>
         </div>
 <!--        <div id="playBar" class="w-1/2 h-1 flex flex-row content-center justify-start">-->
 <!--            <div id="redBar" class="w-1 h-1 center"></div>-->
 <!--            <span id="pointer" class="w-2 h-2 rounded-full"></span>-->
 <!--        </div>-->
-            
+
             <input type="range" id="playBar" class="w-1/2 h-1 rounded-l">
         <span id="time" class="color-white">00:00/00:00</span>
         <div id="sound">
